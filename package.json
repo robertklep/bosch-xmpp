@@ -1,0 +1,41 @@
+{
+  "name": "bosch-easyremote",
+  "version": "1.0.0",
+  "description": "Bosch EasyRemote protocol library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bosch",
+    "easyremote",
+    "bosch easyremote",
+    "ivt",
+    "ivt anywhere",
+    "nefit",
+    "easy",
+    "nefit easy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertklep/bosch-easyremote.git"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "author": "Robert Klep <robert@klep.name>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertklep/bosch-easyremote/issues"
+  },
+  "homepage": "https://github.com/robertklep/bosch-easyremote#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "debug": "^3.1.0",
+    "http-string-parser": "0.0.5",
+    "node-xmpp-client": "^3.2.0",
+    "promise-queue": "^2.2.5",
+    "sasl-scram-sha-1": "^1.2.1",
+    "saslmechanisms": "^0.1.1"
+  }
+}
