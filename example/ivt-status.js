@@ -8,7 +8,7 @@ const client = IVTClient({
 });
 
 client.connect().then(() => {
-  return client.get('/system/sensors/outdoorTemperatures');
+  return client.get('/gateway/versionFirmware');
 }).then(response => {
   console.log('%j', response);
 }).catch(e => {
