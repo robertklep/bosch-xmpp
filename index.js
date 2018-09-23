@@ -2,6 +2,7 @@
 require('tls').convertNPNProtocols = null;
 
 module.exports = {
-  BaseClient: require('./lib/base-client'),
-  IVTClient:  require('./lib/ivt-client')
+  BaseClient:      require('./lib/base-client'),
+  IVTClient:       require('./lib/ivt-client'),
+  NefitEasyClient: require('./lib/nefit-easy-client'),
 };
