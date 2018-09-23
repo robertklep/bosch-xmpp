@@ -1,3 +1,6 @@
-# Bosch EasyRemote
+# Bosch XMPP
 
-(WIP) Protocol support for Bosch EasyRemote/IVT devices.
+(WIP) Bosch XMPP implementation, used for, amongst others:
+
+* Nefit Easy
+* IVT heat pumps

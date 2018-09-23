@@ -1,11 +1,8 @@
 {
-  "name": "bosch-easyremote",
+  "name": "bosch-xmpp",
   "version": "1.0.0",
-  "description": "Bosch EasyRemote protocol library",
+  "description": "Bosch XMPP protocol library",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "bosch",
     "easyremote",
@@ -18,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertklep/bosch-easyremote.git"
+    "url": "git+https://github.com/robertklep/bosch-xmpp.git"
   },
   "engines": {
     "node": ">=4"
@@ -26,9 +23,9 @@
   "author": "Robert Klep <robert@klep.name>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robertklep/bosch-easyremote/issues"
+    "url": "https://github.com/robertklep/bosch-xmpp/issues"
   },
-  "homepage": "https://github.com/robertklep/bosch-easyremote#readme",
+  "homepage": "https://github.com/robertklep/bosch-xmpp#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
     "debug": "^3.1.0",
