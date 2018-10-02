@@ -1,21 +1,3 @@
-# Bosch XMPP
-
-Unofficial Bosch XMPP implementation, used for, amongst others:
-
-* Nefit Easy
-* Bosch/IVT heat pumps
-* (probably) any Bosch EasyRemote compatible controller
-
-## Command Line Interface
-
-Install using `-g/--global`:
-```
-$ npm i -g bosch-xmpp
-```
-
-Options:
-
-```
 bosch-xmpp – Bosch XMPP command line interface
 
 Usage:
@@ -50,56 +32,3 @@ options, you can also define them through environment variables:
   BOSCH_XMPP_SERIAL_NUMBER
   BOSCH_XMPP_ACCESS_KEY
   BOSCH_XMPP_PASSWORD
-```
-
-## API
-
-Install locally:
-```
-$ npm i bosch-xmpp
-```
-
-### Nefit Easy
-
-```
-const { NefitEasyClient } = require('bosch-xmpp');
-
-// Instantiate client
-const client = NefitEasyClient({
-  serialNumber : '...',
-  accessKey    : '...',
-  password     : '...',
-});
-
-await client.connect();
-try {
-  console.log('%j', await client.get('/ecus/rrc/uiStatus'))
-} catch(e) {
-  console.error(e.stack || e);
-}
-client.end();
-```
-
-### IVT
-
-```
-const { IVTClient } = require('bosch-xmpp');
-
-const client = IVTClient({
-  serialNumber : '...',
-  accessKey    : '...',
-  password     : '...',
-});
-
-await client.connect();
-try {
-  console.log('%j', await client.get('/gateway/versionFirmware'));
-} catch(e) {
-  console.error(e.stack || e);
-}
-client.end();
-```
-
-# Disclaimer
-
-This library is not created or endorsed by Bosch, Nefit or any affiliated companies. It is the result of (legal) reverse engineering efforts.
