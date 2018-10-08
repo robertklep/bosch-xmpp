@@ -102,4 +102,4 @@ client.end();
 
 # Disclaimer
 
-This library is not created or endorsed by Bosch, Nefit or any affiliated companies. It is the result of (legal) reverse engineering efforts.
+The implementation of this library is based on reverse-engineering the communications between the mobile apps and the backend, plus various other bits and pieces of information. It is not based on any official information given out by Bosch, Nefit or affiliated companies, and therefore there are no guarantees whatsoever regarding the safety of your devices and/or their settings, or the accuracy of the information provided.
