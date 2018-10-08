@@ -4,6 +4,7 @@ Unofficial Bosch XMPP implementation, used for, amongst others:
 
 * Nefit Easy
 * Bosch/IVT heat pumps
+* Buderus KM200, KM100 or KM50
 * (probably) any Bosch EasyRemote compatible controller
 
 ## Command Line Interface
