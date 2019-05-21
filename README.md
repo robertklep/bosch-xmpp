@@ -2,8 +2,9 @@
 
 Unofficial Bosch XMPP implementation, used for, amongst others:
 
-* Nefit Easy
+* Nefit Easy and similar devices (Junkers Control CT100, Worcester Wave, Bosch RRC, Buderus Logamatic TC 100)
 * Bosch/IVT heat pumps
+* Junkers Bosch MB LANi/MB LAN2
 * Buderus KM200, KM100 or KM50
 * (probably) any Bosch EasyRemote compatible controller
 
