@@ -1,6 +1,6 @@
 {
   "name": "bosch-xmpp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bosch XMPP protocol library and command line interface",
   "main": "index.js",
   "keywords": [
