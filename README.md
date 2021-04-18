@@ -6,6 +6,7 @@ Unofficial Bosch XMPP implementation, used for, amongst others:
 * Bosch/IVT heat pumps
 * Junkers Bosch MB LANi/MB LAN2
 * Buderus KM200, KM100 or KM50
+* Bosch EasyControl CT200
 * (probably) any Bosch EasyRemote compatible controller
 
 ## Command Line Interface
@@ -32,19 +33,20 @@ Options:
   --serial=SERIAL          Device serial number
   --access-key=ACCESS_KEY  Device access key
   --password=PASSWORD      Device password
-  --xmpp-host=HOST         XMPP host to connect to [default: wa2-mz36-qrmzh6.bosch.de]
+  --xmpp-host=HOST         XMPP host to connect to
   --xmpp-port=PORT         XMPP port to connect to [default: 5222]
   --timeout=TIMEOUT        Retry timeout in seconds [default: 5]
 
 Supported values for CLIENT:
   nefit                    Nefit Easy or compatible
   ivt                      IVT/Bosch devices (mainly heat pumps)
+  easycontrol              Bosch EasyControl (CT200)
 
 Examples:
   $ bosch-xmpp nefit get /ecus/rrc/uiStatus
   $ bosch-xmpp ivt get /gateway/versionFirmware
   $ bosch-xmpp nefit put /heatingCircuits/hc1/temperatureRoomManual '{"value":20.5}'
-  $ bosch-xmpp ivt bridge 8080 0.0.0.0
+  $ bosch-xmpp easycontrol bridge 8080 0.0.0.0
 
 Instead of specifying serial number, access key or password through
 options, you can also define them through environment variables:
@@ -88,6 +90,26 @@ client.end();
 const { IVTClient } = require('bosch-xmpp');
 
 const client = IVTClient({
+  serialNumber : '...',
+  accessKey    : '...',
+  password     : '...',
+});
+
+await client.connect();
+try {
+  console.log('%j', await client.get('/gateway/versionFirmware'));
+} catch(e) {
+  console.error(e.stack || e);
+}
+client.end();
+```
+
+### EasyControl (CT200)
+
+```
+const { EasyControlClient } = require('bosch-xmpp');
+
+const client = EasyControlClient({
   serialNumber : '...',
   accessKey    : '...',
   password     : '...',

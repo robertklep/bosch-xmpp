@@ -19,7 +19,7 @@ Options:
 Supported values for CLIENT:
   nefit                    Nefit Easy or compatible
   ivt                      IVT/Bosch devices (mainly heat pumps)
-  easycontrol              Bosch EasyControl (at least the CT200)
+  easycontrol              Bosch EasyControl (CT200)
 
 Examples:
   $ bosch-xmpp nefit get /ecus/rrc/uiStatus
