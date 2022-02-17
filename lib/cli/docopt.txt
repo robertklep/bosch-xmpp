@@ -4,6 +4,7 @@ Usage:
   bosch-xmpp [options] CLIENT get <endpoint>
   bosch-xmpp [options] CLIENT put <endpoint> <value>
   bosch-xmpp [options] CLIENT bridge [<port>] [<host>]
+  bosch-xmpp --help
 
 Options:
   -h --help                Show this screen
