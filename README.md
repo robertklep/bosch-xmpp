@@ -56,6 +56,17 @@ options, you can also define them through environment variables:
   BOSCH_XMPP_PASSWORD
 ```
 
+## HTTP bridge
+
+You can start a local HTTP server that will set up a persistent connection with the Bosch backend:
+```
+bosch-xmpp bridge
+```
+
+By default the bridge will listen on localhost port 3000. You can use the bridge from other software to retrieve endpoints.
+
+The base URL, assuming the default, is `http://localhost:3000/bridge/ENDPOINT`. For example, to retrieve the `/ecus/rrc/uiStatus` endpoint, the URL will be `http://localhost:3000/bridge/ecus/rrc/uiStatus`.
+
 ## API
 
 Install locally:
