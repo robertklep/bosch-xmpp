@@ -30,9 +30,9 @@ Options:
   -h --help                Show this screen
   -v --version             Show version
   -V --verbose             Be more verbose
-  --serial=SERIAL          Device serial number
-  --access-key=ACCESS_KEY  Device access key
-  --password=PASSWORD      Device password
+  --serial=SERIAL          Device serial number (on some devices called "login name")
+  --access-key=ACCESS_KEY  Device access key (on some devices called "password")
+  --password=PASSWORD      Device password (on some devices, the user-configured password)
   --xmpp-host=HOST         XMPP host to connect to
   --xmpp-port=PORT         XMPP port to connect to [default: 5222]
   --timeout=TIMEOUT        Retry timeout in seconds [default: 5]
