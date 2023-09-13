@@ -9,6 +9,12 @@ Unofficial Bosch XMPP implementation, used for, amongst others:
 * Bosch EasyControl CT200
 * (probably) any Bosch EasyRemote compatible controller
 
+## I keep getting JSON errors, but I'm sure I'm passing the correct serial/access key/password!
+
+I found that the EasyControl app for iOS/Android is able to use your Bosch SingleKey ID password to access the device. This is _not_ possible with `bosch-xmpp` (if you use this password, you will get JSON decoding errors, which means that `bosch-xmpp` is unable to decrypt the response data).
+
+Instead, you need to set an explicit device password. From the EasyControl app, you can change it from _"Settings > Personal > Change password"_. 
+
 ## Command Line Interface
 
 Install using `-g/--global`:
