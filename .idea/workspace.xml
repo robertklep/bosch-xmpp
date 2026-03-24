@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09a59631-ec5b-4ff5-bb3d-392289ad937d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/bosch-xmpp" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bosch-xmpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base-client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cli/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cli/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/encryption.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/encryption.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nefit-easy-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nefit-easy-client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scram-auth-mechanism.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774336894106</updated>
-      <workItem from="1774336895747" duration="3682000" />
+      <workItem from="1774336895747" duration="3963000" />
     </task>
     <servers />
   </component>
