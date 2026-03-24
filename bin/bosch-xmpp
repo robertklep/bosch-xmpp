@@ -1,3 +1,10 @@
 #!/usr/bin/env node
 
+// Suppress TLS warning for NODE_TLS_REJECT_UNAUTHORIZED
+const origEmitWarning = process.emitWarning;
+process.emitWarning = (warning, ...args) => {
+  if (typeof warning === 'string' && warning.includes('NODE_TLS_REJECT_UNAUTHORIZED')) return;
+  return origEmitWarning.call(process, warning, ...args);
+};
+
 require('../lib/cli')();
